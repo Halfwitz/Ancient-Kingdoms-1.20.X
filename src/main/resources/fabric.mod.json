@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "ancientkingdoms",
+	"version": "${version}",
+	"name": "Ancient Kingdoms",
+	"description": "Explore the long forgotten ancient lands of Minecraft!",
+	"authors": [
+		"Halfwitz"
+	],
+	"contact": {
+		"homepage": "https://github.com/Halfwitz",
+		"sources": "https://github.com/Halfwitz"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/ancientkingdoms/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.halfwitz.ancientkingdoms.AncientKingdomsMod"
+		],
+		"fabric-datagen": [
+			"net.halfwitz.ancientkingdoms.AncientKingdomsModDataGenerator"
+		],
+		"client": [
+			"net.halfwitz.ancientkingdoms.AncientKingdomsModClient"
+		]
+	},
+	"mixins": [
+		"ancientkingdoms.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
