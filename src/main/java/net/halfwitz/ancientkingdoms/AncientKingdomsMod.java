@@ -2,6 +2,8 @@ package net.halfwitz.ancientkingdoms;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.halfwitz.ancientkingdoms.block.ModBlocks;
+import net.halfwitz.ancientkingdoms.item.ModItemGroup;
 import net.halfwitz.ancientkingdoms.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,5 +22,7 @@ public class AncientKingdomsMod implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModItemGroup.registerItemGroups();
 	}
 }
