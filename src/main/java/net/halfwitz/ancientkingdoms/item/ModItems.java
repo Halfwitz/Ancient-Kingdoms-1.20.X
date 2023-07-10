@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.halfwitz.ancientkingdoms.AncientKingdomsMod;
+import net.halfwitz.ancientkingdoms.block.ModBlocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -36,6 +37,16 @@ public class ModItems {
         entries.add(ANCIENT_NUGGET);
         entries.add(ANCIENT_INGOT);
     }
+    /*Adds Items to Natural ItemGroup as an entry.
+     * @param entries - the FabricItemGroupEntries being added to.
+     */
+    private static void itemGroupNatural(FabricItemGroupEntries entries) {
+        entries.add(ModBlocks.ANCIENT_BLOCK);
+        entries.add(ModBlocks.ANCIENT_ORE);
+        entries.add(ModBlocks.NETHER_ANCIENT_ORE);
+        entries.add(ModBlocks.DEEPSLATE_ANCIENT_ORE);
+        entries.add(ModBlocks.END_STONE_ANCIENT_ORE);
+    }
 
     //Called by AncientKingdomsMod.java
     public static void registerModItems() {
@@ -43,5 +54,7 @@ public class ModItems {
         AncientKingdomsMod.LOGGER.info("Registering Mod Items for "+MOD_ID);
         //Adds Item entries to INGREDIENTS Item Group
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::itemGroupIngredients);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModItems::itemGroupNatural);
+
     }
 }
