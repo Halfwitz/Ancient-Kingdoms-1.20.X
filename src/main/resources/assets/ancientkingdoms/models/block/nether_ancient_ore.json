@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ancientkingdoms:block/nether_ancient_ore"
+  }
+}

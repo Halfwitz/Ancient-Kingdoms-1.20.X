@@ -1,4 +1,12 @@
 {
   "item.ancientkingdoms.ancient_nugget": "Ancient Nugget",
-  "item.ancientkingdoms.ancient_ingot": "Ancient Ingot"
+  "item.ancientkingdoms.ancient_ingot": "Ancient Ingot",
+
+  "block.ancientkingdoms.ancient_block": "Block of Ancient Power",
+  "block.ancientkingdoms.ancient_ore": "Ancient Ore",
+  "block.ancientkingdoms.deepslate_ancient_ore": "Deepslate Ancient Ore",
+  "block.ancientkingdoms.nether_ancient_ore": "Nether Ancient Ore",
+  "block.ancientkingdoms.end_stone_ancient_ore": "End Stone Ancient Ore",
+
+  "itemgroup.ancient_kingdoms_group": "Ancient Kingdoms"
 }
