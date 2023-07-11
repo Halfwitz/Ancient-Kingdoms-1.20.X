@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ancientkingdoms:ancient_block"
+    }
+  ],
+
+  "result": {
+    "item": "ancientkingdoms:ancient_ingot",
+    "count": 9
+  }
+}

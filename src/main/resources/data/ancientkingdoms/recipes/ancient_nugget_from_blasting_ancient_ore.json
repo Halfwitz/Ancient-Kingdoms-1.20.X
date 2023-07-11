@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 125,
+  "experience": 5,
+  "group": "ancient_nugget",
+  "ingredient": {
+    "item": "ancientkingdoms:ancient_ore"
+  },
+  "result": "ancientkingdoms:ancient_nugget"
+}

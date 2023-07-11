@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "ancient_ingot",
+  "key": {
+    "#": {
+      "item": "ancientkingdoms:ancient_nugget"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "ancientkingdoms:ancient_ingot"
+  },
+  "show_notification": true
+}
