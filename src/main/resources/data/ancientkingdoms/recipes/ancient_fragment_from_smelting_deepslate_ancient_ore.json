@@ -3,9 +3,9 @@
   "category": "misc",
   "cookingtime": 250,
   "experience": 5,
-  "group": "ancient_nugget",
+  "group": "ancient_fragment",
   "ingredient": {
     "item": "ancientkingdoms:deepslate_ancient_ore"
   },
-  "result": "ancientkingdoms:ancient_nugget"
+  "result": "ancientkingdoms:ancient_fragment"
 }

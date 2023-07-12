@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "ancientkingdoms:ancient_ore",
+    "ancientkingdoms:nether_ancient_ore",
+    "ancientkingdoms:deepslate_ancient_ore",
+    "ancientkingdoms:end_stone_ancient_ore",
+    "ancientkingdoms:ancient_block"
+
+  ]
+}

@@ -16,7 +16,7 @@ import static net.halfwitz.ancientkingdoms.AncientKingdomsMod.MOD_ID;
 public class ModItems {
 
     //Item Declarations
-    public static final Item ANCIENT_NUGGET = registerItem("ancient_nugget", new Item(new FabricItemSettings()));
+    public static final Item ancient_fragment = registerItem("ancient_fragment", new Item(new FabricItemSettings()));
     public static final Item ANCIENT_INGOT = registerItem("ancient_ingot", new Item(new FabricItemSettings()));
 
 
@@ -34,7 +34,7 @@ public class ModItems {
     * @param entries - the FabricItemGroupEntries being added to.
      */
     private static void itemGroupIngredients(FabricItemGroupEntries entries) {
-        entries.add(ANCIENT_NUGGET);
+        entries.add(ancient_fragment);
         entries.add(ANCIENT_INGOT);
     }
     /*Adds Items to Natural ItemGroup as an entry.

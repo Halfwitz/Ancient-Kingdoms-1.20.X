@@ -22,7 +22,7 @@ public class ModItemGroup {
                     .icon(() -> new ItemStack(ModItems.ANCIENT_INGOT))
                     //Add an entry for each item/block/etc.
                     .entries((displayContext, entries) -> {
-                        entries.add(ModItems.ANCIENT_NUGGET);
+                        entries.add(ModItems.ancient_fragment);
                         entries.add(ModItems.ANCIENT_INGOT);
 
                         entries.add(ModBlocks.ANCIENT_ORE);
