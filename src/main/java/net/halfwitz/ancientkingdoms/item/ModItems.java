@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.halfwitz.ancientkingdoms.AncientKingdomsMod;
 import net.halfwitz.ancientkingdoms.block.ModBlocks;
+import net.halfwitz.ancientkingdoms.item.custom.MetalDetectorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -16,8 +17,10 @@ import static net.halfwitz.ancientkingdoms.AncientKingdomsMod.MOD_ID;
 public class ModItems {
 
     //Item Declarations
-    public static final Item ancient_fragment = registerItem("ancient_fragment", new Item(new FabricItemSettings()));
+    public static final Item ANCIENT_FRAGMENT = registerItem("ancient_fragment", new Item(new FabricItemSettings()));
     public static final Item ANCIENT_INGOT = registerItem("ancient_ingot", new Item(new FabricItemSettings()));
+
+    public static final Item METAL_DETECTOR = registerItem("metal_detector", new MetalDetectorItem(new FabricItemSettings().maxDamage(256)));
 
 
     /*
@@ -34,7 +37,7 @@ public class ModItems {
     * @param entries - the FabricItemGroupEntries being added to.
      */
     private static void itemGroupIngredients(FabricItemGroupEntries entries) {
-        entries.add(ancient_fragment);
+        entries.add(ANCIENT_FRAGMENT);
         entries.add(ANCIENT_INGOT);
     }
     /*Adds Items to Natural ItemGroup as an entry.
@@ -47,6 +50,12 @@ public class ModItems {
         entries.add(ModBlocks.DEEPSLATE_ANCIENT_ORE);
         entries.add(ModBlocks.END_STONE_ANCIENT_ORE);
     }
+    /*Adds Items to Tools ItemGroup as an entry.
+     * @param entries - the FabricItemGroupEntries being added to.
+     */
+    private static void itemGroupTools(FabricItemGroupEntries entries) {
+        entries.add(METAL_DETECTOR);
+    }
 
     //Called by AncientKingdomsMod.java
     public static void registerModItems() {
@@ -55,6 +64,7 @@ public class ModItems {
         //Adds Item entries to INGREDIENTS Item Group
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::itemGroupIngredients);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModItems::itemGroupNatural);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::itemGroupTools);
 
     }
 }

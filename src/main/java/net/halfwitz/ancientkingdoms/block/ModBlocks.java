@@ -3,6 +3,7 @@ package net.halfwitz.ancientkingdoms.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.halfwitz.ancientkingdoms.AncientKingdomsMod;
+import net.halfwitz.ancientkingdoms.block.custom.SoundBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
@@ -25,6 +26,9 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS)));
     public static final Block NETHER_ANCIENT_ORE = registerBlock("nether_ancient_ore",
             new Block(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS)));
+
+    public static final Block SOUND_BLOCK = registerBlock("sound_block",
+            new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
 
 

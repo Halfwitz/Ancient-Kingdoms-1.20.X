@@ -22,14 +22,17 @@ public class ModItemGroup {
                     .icon(() -> new ItemStack(ModItems.ANCIENT_INGOT))
                     //Add an entry for each item/block/etc.
                     .entries((displayContext, entries) -> {
-                        entries.add(ModItems.ancient_fragment);
+                        entries.add(ModItems.ANCIENT_FRAGMENT);
                         entries.add(ModItems.ANCIENT_INGOT);
+                        entries.add(ModItems.METAL_DETECTOR);
 
                         entries.add(ModBlocks.ANCIENT_ORE);
                         entries.add(ModBlocks.NETHER_ANCIENT_ORE);
                         entries.add(ModBlocks.DEEPSLATE_ANCIENT_ORE);
                         entries.add(ModBlocks.END_STONE_ANCIENT_ORE);
                         entries.add(ModBlocks.ANCIENT_BLOCK);
+
+                        entries.add(ModBlocks.SOUND_BLOCK);
                     }).build());
 
     public static void registerItemGroups() {
