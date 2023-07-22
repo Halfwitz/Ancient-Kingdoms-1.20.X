@@ -22,6 +22,8 @@ public class ModItems {
 
     public static final Item METAL_DETECTOR = registerItem("metal_detector", new MetalDetectorItem(new FabricItemSettings().maxDamage(256)));
 
+    public static final Item ANCIENT_FRUIT = registerItem("ancient_fruit", new Item(new FabricItemSettings().food(ModFoodComponents.ANCIENT_FRUIT)));
+
 
     /*
     * Registers an Item object with name name.

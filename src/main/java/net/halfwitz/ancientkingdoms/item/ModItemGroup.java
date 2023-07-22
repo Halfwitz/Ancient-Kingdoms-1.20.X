@@ -24,6 +24,7 @@ public class ModItemGroup {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.ANCIENT_FRAGMENT);
                         entries.add(ModItems.ANCIENT_INGOT);
+                        entries.add(ModItems.ANCIENT_FRUIT);
                         entries.add(ModItems.METAL_DETECTOR);
 
                         entries.add(ModBlocks.ANCIENT_ORE);
